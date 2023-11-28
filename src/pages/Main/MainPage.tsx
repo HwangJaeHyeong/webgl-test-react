@@ -1,10 +1,17 @@
+import { ThreeTest } from 'components/ThreeTest'
 import { FC } from 'react'
-import { Root } from './styled'
+import { Container, Root } from './styled'
 
 type MainPageProps = {
   className?: string
 }
 
 export const MainPage: FC<MainPageProps> = ({ className }) => {
-  return <Root className={className}>MainPage</Root>
+  return (
+    <Root className={className}>
+      <Container>
+        <ThreeTest />
+      </Container>
+    </Root>
+  )
 }

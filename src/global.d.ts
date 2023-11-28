@@ -5,6 +5,7 @@ declare module '*.svg'
 declare module '*.gif'
 declare module '*.jpg'
 declare module '*.jpeg'
+declare module '*.gltf'
 declare const global = 'sth'
 declare var process: {
   env: any
