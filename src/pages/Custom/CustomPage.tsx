@@ -1,7 +1,7 @@
 import { CustomElement } from 'components/CustomElement'
 import { CustomTest } from 'components/CustomTest'
 import { FC, useState } from 'react'
-import { CanvasViewerContainer, Container, Root } from './styled'
+import { CanvasViewerContainer, CanvasViewerTitleTypo, Container, Root } from './styled'
 
 type CustomPageProps = {
   className?: string
@@ -14,6 +14,7 @@ export const CustomPage: FC<CustomPageProps> = ({ className }) => {
     <Root className={className}>
       <Container>
         <CanvasViewerContainer>
+          <CanvasViewerTitleTypo>미리보기</CanvasViewerTitleTypo>
           <CustomTest>
             <CustomElement fbxUrl={'bell.fbx'} color={'#3ad2c4'} position={[240, 300, -125]} scale={[1, 1, 1]} />
             <CustomElement fbxUrl={'bell_02.fbx'} color={'yellow'} position={position} scale={[0.1, 0.1, 0.1]} />

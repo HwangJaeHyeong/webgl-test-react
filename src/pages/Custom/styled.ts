@@ -19,7 +19,18 @@ export const Container = styled.div`
 export const CanvasViewerContainer = styled.div`
   width: ${CANVAS_WIDTH}px;
   height: ${CANVAS_HEIGHT}px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
   overflow: hidden;
   border: 1px #333 solid;
   border-radius: 8px;
+`
+
+export const CanvasViewerTitleTypo = styled.p`
+  font-size: 24px;
+  font-weight: bold;
+  color: #111;
+  margin-top: 20px;
 `
